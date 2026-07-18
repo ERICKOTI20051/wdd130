@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting</title>
-    <meta name="description" content="Contact White Water Rafting Company">
+    <meta name="description"
+      content="Contact White Water Rafting Company for detailed and immediate responses regarding our services">
     <meta name="author" content="Erick Otieno">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -39,7 +40,7 @@
 
             <div class="map">
                 <iframe src="https://www.google.com/maps?q=Nairobi+CBD,+Nairobi,+Kenya&output=embed"
-                  width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                  width="400" height="650" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -60,29 +61,24 @@
 
                         <p>Purpose of Message</p>
 
-                        <label>
-                            <input type="radio" name="purpose" value="General Inquiry" checked>
-                            General Inquiry
-                        </label>
+                        <input type="radio" id="general" name="purpose" value="General Inquiry"
+                          checked>
+                        <label for="general">General Inquiry</label><br>
 
-                        <label>
-                            <input type="radio" name="purpose" value="Reservation Question">
-                            Reservation Question
-                        </label>
+                        <input type="radio" id="reservation" name="purpose"
+                          value="Reservation Question">
+                        <label for="reservation">Reservation Question</label><br>
 
-                        <label>
-                            <input type="radio" name="purpose" value="Website Suggestion">
-                            Website Suggestion
-                        </label>
+                        <input type="radio" id="suggestion" name="purpose"
+                          value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
 
                         <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
 
-                        <textarea id="message" name="message" rows="6"></textarea>
-
-                        <label>
-                            <input type="checkbox" name="newsletter">
-                            Please subscribe me to the monthly newsletter
-                        </label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly
+                            newsletter</label>
 
                         <button type="submit">Get in Touch!</button>
 
